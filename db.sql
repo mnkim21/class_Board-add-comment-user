@@ -35,7 +35,7 @@ as
         readcount,
         regdate,
         (sysdate - regdate) as isnew,
-        () as ccnt
+        (select count(*) from tblComment where pseq = tblBoard.seq) as ccnt
     from tblBoard;
 
 select * from tblBoard;
