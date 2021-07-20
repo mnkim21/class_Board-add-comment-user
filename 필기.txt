@@ -1,0 +1,83 @@
+myapp
+1. 패키지 구성
+	a. com.test.myapp
+		- 메인 패키지
+		- Index.java(index.jsp): 시작페이지
+		- Template.java(template.jsp): 템플릿
+		- EncodingFilter.java: 인코딩 필터
+	b. com.test.myapp.board(*****)
+		- 게시판 패키지
+		- Template.java(template.jsp): 게시판 템플릿
+	c. com.test.myapp.member
+		- 회원 패키지
+		- Login.java, LoginOk.java: 로그인
+		- Logout.java: 로그아웃
+
+2. 콘텐츠 구성
+	a. asset
+		- jQuery, Bootstrap
+		- images
+	b. files
+		- 게시판 첨부 파일
+	c. inc
+		- 조각 페이지
+		- asset.jsp: 클라이언트 코드 참조 페이지
+		- header.jsp: 사이트 공통 헤더
+		- init.jsp: 초기 JavaScript 실행 페이지
+	d. WEB-INF
+		1. lib
+			- cos.jar: 파일 업로드
+			- jstl-1.2.jar: JSTL
+			- ojdbc6.jar OR objdbc8.jar: 둘 중 하나 선택하고 나머지는 삭제
+		2. views
+			- index.jsp: 시작페이지
+			- template.jsp: 템플릿
+			a. board
+				- 게시판 뷰 페이지
+			b. member
+				- 회원 뷰 페이지
+				
+				
+
+게시판
+1. com.test.myapp.board
+	a. List.java
+	b. Add.java
+	c. AddOk.java
+	d. View.java
+	e. Edit.java
+	f. EditOk.java
+	g. Del.java
+	h. DelOk.java
+	i. BoardDAO.java // Model
+	j. BoardDTO.java
+
+2. views > board
+	a. list.jsp
+	b. add.jsp
+	c. view.jso
+	d. edit.jsp
+	e. del.jsp
+	
+	
+
+댓글 쓰기
+1. 별도 테이블
+	- tblComment
+2. JSP 페이지(x)
+3. Servlet(o)
+	- AddComment.java
+	- DelComment.java
+	- CommentDAO.java > BoardDAO 사용
+	- CommentDTO.java
+	- Add.java, (AddOk.java), Edit.java, (EditOk.java), Del.java, (DelOk.java), AddComment.java, (DelComment.java)에 CheckMember 추가 
+
+	
+게시판 정책
+1. 익명 사용자
+	- 목록보기가 가능하다.(list.do)
+	- 글보기가 가능하다.(view.do)
+	- 글쓰기, 수정하기, 삭제하기, 댓글쓰기 등은 불가능하다.
+2. 수정하기, 삭제하기
+	- 글쓴이만 가능하다.
+	

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Jal_Onuel';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-bottom: 50px;	
+}
+
+body, table, th, td, a, p, div, span, li, button, input, textarea, select, option, h1, h2, h3, h4, h5, h6 {
+	color: #777;
+	font-family: 'Jal_Onuel' !important;
+}
+
+h1 {
+	font-size: 24px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #BBB;
+}
+
+h2 {
+	font-size: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #BBB;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.main-header {
+	border-bottom: 1px solid #777;
+	box-shadow: 0px 3px 4px #BBB;
+}
+
+.main-header > section {
+	width: 800px;
+	height: 45px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-header > section > nav > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.main-header > section > nav > ul > li {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.main-header > section > nav > ul > li:hover {
+	text-shadow: 2px 2px 2px #CCC;
+}
+
+.main-header > section > nav > ul > li:first-letter {
+	color: tomato;
+	font-weight: bold;
+}
+
+.main-header > section > .auth {
+	display: flex;
+}
+
+.main-header > section > .auth > .btn-auth {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.main-header > section > .auth > .btn-auth:hover {
+	text-shadow: 2px 2px 2px #CCC;
+}
+
+.main-header > section > .auth > .btn-auth:first-letter {
+	color: cornflowerblue;
+	font-weight: bold;
+}
+
+.main-section {
+	width: 800px;
+	margin: 35px auto;
+}
+
+
+.user-list {
+	
+}
+
+.user-list > button {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+.main-section .table th, .main-section .table td {
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.main-section .table th {
+	background-color: #EEE;
+}
+
+.btns {
+	margin: 5px 10px;
+}
+
+.short {
+	width: 110px;
+	
+}
+
